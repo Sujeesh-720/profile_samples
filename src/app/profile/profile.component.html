@@ -1,0 +1,25 @@
+<h3>Student Profile</h3>
+<h5>Student ID:{{studentItem.StudentID}}</h5>
+<div class="row">
+    <div class="col-md-2">
+        <img class="thumbnail" style="width:100%" name="s_img" src="{{studentItem.StudentPhoto}}">
+          
+    </div>
+      <div class="col-md-10">
+               <ul class="list-group">
+                <li class="list-group-item" name="s_name">Student Name:{{studentItem.StudentName}}</li>
+                  <li class="list-group-item" name="s_email">Email:{{studentItem.StudentEmail}}</li>
+                  <li class="list-group-item" name="s_phone">Phone:{{studentItem.StudentPhone}}</li>
+                  <li class="list-group-item" name="s_address">Address:{{studentItem.StudentAddress}}</li>
+                  <li class="list-group-item" name="s_qual">Highest Qualification:{{studentItem.StudentHighestQualification}}</li>
+                  <li class="list-group-item" name="s_passyear">Pass out Year:{{studentItem.StudentPassOutYear}}</li>
+                  <li class="list-group-item" name="s_skill">Skill Set:{{studentItem.StudentSkill}}</li>
+                  <li class="list-group-item" name="s_status">Employment Status:{{studentItem.StudentStatus}}</li>
+                  <li class="list-group-item" name="s_tech">Technology Training:{{studentItem. StudentTech}}</li>
+                  <li class="list-group-item" name="s_year">Year:{{studentItem.StudentYear}}</li>
+                   <li class="list-group-item" name="s_course">Course:{{studentItem.StudentCourse}}</li>
+                   <li class="list-group-item">Amount Paid:{{studentItem.StudentAmount}}</li>
+                   <button class="btn btn-warning" style="cursor:pointer" (click)="update()">Update Profile</button>
+               </ul>
+       </div>
+</div>

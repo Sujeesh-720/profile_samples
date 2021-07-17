@@ -1,0 +1,21 @@
+<h3>User Profile</h3>
+<h5>User ID:{{userItem.UserID}}</h5>
+<div class="row">
+    <div class="col-md-2">
+        <img class="thumbnail" style="width:100%" name="u_img" src="{{userItem.UserPhoto}}">
+          
+    </div>
+      <div class="col-md-10">
+               <ul class="list-group">
+                <li class="list-group-item" name="u_name"> Name:{{userItem.UserName}}</li>
+                  <li class="list-group-item" name="u_email">Email:{{userItem.UserEmail}}</li>
+                  <li class="list-group-item" name="u_qual">Qualification:{{userItem.UserQualification}}</li>
+                  <li class="list-group-item" name="u_passyear">Pass out Year:{{userItem.UserPassOutYear}}</li>
+                  <li class="list-group-item" name="u_course">ICTAK Course:{{userItem.UserCourse}}</li>
+                  <li class="list-group-item" name="u_status">Employment Status:{{userItem.UserStatus}}</li>
+                  <li class="list-group-item" name="u_place">Place:{{userItem. UserPlace}}</li>
+                  <li class="list-group-item" name="u_mark">Exit Exam Mark:{{userItem.UserMark}}</li>
+                  <button class="btn btn-warning" style="cursor:pointer" (click)="upload()">Update Profile</button>
+               </ul>
+       </div>
+</div>
