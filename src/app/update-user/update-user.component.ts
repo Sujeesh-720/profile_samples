@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-update-user',
@@ -21,7 +22,7 @@ export class UpdateUserComponent implements OnInit {
     UserPhoto:"https://image.flaticon.com/icons/png/512/145/145843.png"
     
   }
-  constructor(private router:Router) { }
+  constructor(private router:Router,private userService:UserService) { }
 
   ngOnInit(): void {
   }
