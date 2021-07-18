@@ -1,39 +1,60 @@
-<h3>Update User Profile</h3>
 
-
-<div class="row">
-    
-      <div class="col-md-10">
-               <ul class="list-group">
-                <div class="girl">
-                
-                <li class="list-group-item" name="u_name">Name:-<input type="text" id="usr"></li>
-
-                  <li class="list-group-item" name="u_email">Email:-<input type="text" id="usr"></li>
-
-                  
-                  <li class="list-group-item" name="u_qual">Qualification:-<input type="text" id="usr"></li>
-
-            
-                  <li class="list-group-item" name="u_passyear">Pass out Year:-<input type="text" id="usr"></li>
-
-                  
-                  <li class="list-group-item" name="u_course">ICTAK Course:-<input type="text" id="usr"></li>
-        
-            
-                  <li class="list-group-item" name="u_status">Employment Status:-<input type="text" id="usr"></li>
-
-                  
-                  <li class="list-group-item" name="u_place">Place:-<input type="text" id="usr"></li>
-
-                  
-                  <li class="list-group-item" name="u_mark">Exit Exam Mark:-<input type="text" id="usr"></li>
-
-                  <li class="list-group-item"  name="u_img">Image:-<input type="file" id="usr"></li>
-
-                  <button class="btn btn-primary" style="cursor:pointer" (click)="save()" >Save</button>
-                  </div>
-               </ul>
-       </div>
+<div class='card'>
+  <form>
+<div class='card-header'>
+ <b>Update User Profile</b> 
+</div>
+<div class='card-body'>            
+<div class='table-responsive'>
+  <table class='table'>       
+    <tbody>  
+        <tr>
+            <td> <label>Name</label></td>
+            <td><input type="text" name="u_name" /></td>                  
+          </tr>   
+          <tr>
+              <td><label>Email</label></td>
+              <td><input type="text" name="u_email"/></td>                  
+            </tr>  
+            <tr>
+              <td><label>Qualification</label></td>
+              <td><input type="text" name="u_Qual"/></td>                  
+            </tr>  
+            <tr>
+              <td><label> Pass out year</label></td>
+              <td><input type="text" name="u_pass"/></td>                  
+            </tr>  
+            <tr>
+              <td><label>ICTAK Course</label></td>
+              <td><input type="text" name="u_course"/></td>                  
+            </tr>  
+              
+            <tr>
+              <td> <label>Place</label></td>
+              <td><input type="text" name="u_place"/></td>                  
+            </tr>  
+            <tr>
+              <tr>
+                <td> <label>Exit Exam Mark</label></td>
+                <td><input type="text" name="u_mark"/></td>                  
+              </tr>  
+              <tr>
+                <tr>
+                  <td> <label>Employment Status</label></td>
+                  <td><input type="text" name="u_status"/></td>                  
+                </tr>  
+                <tr>
+              <td><label>Image</label></td>
+              <td><input type="file" name="u_image"/></td>                  
+            </tr>  
+            <tr>
+              <td></td>
+              <td><input type="submit" class="btn btn-primary" value="Submit" (click)="editUser()" /></td>                  
+            </tr>             
+    </tbody>
+  </table>
+</div>
+</div>
+</form>
 </div>
 
