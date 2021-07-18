@@ -1,48 +1,70 @@
-<h3>Update Student Profile</h3>
-<div class="row">
-    
-      <div class="col-md-10" >
-               <ul class="list-group">
-                   <div class="boy">
-                
-                <li class="list-group-item"  name="s_name">Student Name:-<input type="text" id="std"></li>
 
-                  
-                  <li class="list-group-item"  name="s_email">Email:-<input type="text" id="std"></li>
+<div class='card'>
+   <form>
+ <div class='card-header'>
+  <b>Update Student Profile</b> 
+ </div>
+ <div class='card-body'>            
+ <div class='table-responsive'>
+   <table class='table'>       
+     <tbody>  
+         <tr>
+             <td> <label>Name</label></td>
+             <td><input type="text" name="s_name"/></td>                  
+           </tr>   
+           <tr>
+               <td><label>Email</label></td>
+               <td><input type="text" name="s_email"/></td>                  
+             </tr>  
+             <tr>
+               <td><label>Address</label></td>
+               <td><input type="text" name="s_add"/></td>                  
+             </tr> 
+             <tr>
+               <td><label>Highest Qualification</label></td>
+               <td><input type="text" name="s_Qual"/></td>                  
+             </tr>  
+             <tr>
+               <td><label> Pass out year</label></td>
+               <td><input type="text" name="s_pass"/></td>                  
+             </tr>  
+             <tr>
+               <td><label>Skill Set</label></td>
+               <td><input type="text" name="s_skill"/></td>                  
+             </tr> 
+             <tr>
+               <td> <label>Employment Status</label></td>
+               <td><input type="text" name="s_status"/></td>                  
+             </tr>  
+             <tr>
+               <td><label>Technology Training</label></td>
+               <td><input type="text" name="s_tech"/></td>                  
+             </tr> 
+             <tr>
+               <td><label>Year</label></td>
+               <td><input type="text" name="s_year"/></td>                  
+             </tr> 
 
-                  
-                  <li class="list-group-item"  name="s_phone">Phone:-<input type="text" id="std"></li>
-
-    
-                  <li class="list-group-item"  name="s_address">Address:-<input type="text" id="std"></li>
-
-                  
-                  <li class="list-group-item"  name="s_qual">Highest Qualification:-<input type="text" id="std"></li>
-
-            
-                  <li class="list-group-item"  name="s_passyear">Pass out Year:-<input type="text" id="std"></li>
-
-                  
-                  <li class="list-group-item" name="s_skill">Skill Set:-<input type="text" id="std"></li>
-
-                  
-                  <li class="list-group-item"  name="s_status">Employment Status:-<input type="text" id="std"></li>
-
-                  
-                  <li class="list-group-item"  name="s_tech">Technology Training:-<input type="text" id="std"></li>
-
-                  
-                  <li class="list-group-item"  name="s_year">Year:-<input type="text" id="std"></li>
-
-                   
-                   <li class="list-group-item"  name="s_course">Course:-<input type="text" id="std"></li>
-
-                   <li class="list-group-item"  name="s_img">Image:-<input type="file" id="std"></li>
-
-                   <button class="btn btn-warning" style="cursor:pointer" (click)="out()">Save</button>
-
-                </div>
-
-               </ul>
-       </div>
-</div>
+             <tr>
+               <td><label>Course</label></td>
+               <td><input type="text" name="s_course"/></td>                  
+             </tr>  
+               
+             <tr>
+               <td> <label>Place</label></td>
+               <td><input type="text" name="u_place"/></td>                  
+             </tr>  
+               <tr>
+               <td><label>Image</label></td>
+               <td><input type="file" name="s_image"/></td>                  
+             </tr>  
+             <tr>
+               <td></td>
+               <td><input type="submit" class="btn btn-primary" value="Submit" (click)="updateStudent()"/></td>                  
+             </tr>             
+     </tbody>
+   </table>
+ </div>
+ </div>
+ </form>
+ </div>
