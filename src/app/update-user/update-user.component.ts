@@ -25,7 +25,7 @@ export class UpdateUserComponent implements OnInit {
 
   ngOnInit(): void {
   }
- save(){
+ editUser(){
    this.router.navigate(['userprofile']);
  }
 }
