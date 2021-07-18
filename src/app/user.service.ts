@@ -21,7 +21,7 @@ export class UserService {
 
   constructor(private http:HttpClient) { }
 
-  save(user:any){
+  editUser(user:any){
     console.log('client update');
     return this.http.put("http://localhost:3000/update",user)
     .subscribe(data=>{console.log(data)})
