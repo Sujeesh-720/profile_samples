@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { StudentService } from '../student.service';
 
 @Component({
   selector: 'app-update-student',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class UpdateStudentComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router,private studentService:StudentService) { }
   
   studentItem={
     StudentName:"",
@@ -29,7 +30,7 @@ export class UpdateStudentComponent implements OnInit {
 
   ngOnInit(): void {
   }
- out(){
+ updateStudent(){
    this.router.navigate(['']);
  }
 }
