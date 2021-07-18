@@ -25,7 +25,7 @@ export class StudentService {
 
   constructor(private http:HttpClient) { }
 
-  out(student:any){
+  updateStudent(student:any){
    console.log('client update');
    return this.http.put("http://localhost:3000/up",student)
    .subscribe(data=>{console.log(data)})
